@@ -20,7 +20,7 @@ class ApiService {
 
       return articles;
     } else {
-      throw ("Can't get the Articles");
+      throw ("erro ao carregar");
     }
   }
 }

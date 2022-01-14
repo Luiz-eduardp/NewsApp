@@ -1,5 +1,3 @@
-//Now let's create the article details page
-
 import 'package:NewsApp/model/article_model.dart';
 import 'package:flutter/material.dart';
 
@@ -25,8 +23,6 @@ class ArticlePage extends StatelessWidget {
               height: 200.0,
               width: double.infinity,
               decoration: BoxDecoration(
-                //let's add the height
-
                 image: DecorationImage(
                     image: NetworkImage(article.urlToImage), fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(12.0),
