@@ -1,5 +1,6 @@
 import 'package:NewsApp/model/article_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_linkify/flutter_linkify.dart';
 
 class ArticlePage extends StatelessWidget {
   final Article article;
@@ -37,11 +38,8 @@ class ArticlePage extends StatelessWidget {
                 color: Colors.orange,
                 borderRadius: BorderRadius.circular(30.0),
               ),
-              child: Text(
-                article.source.name,
-                style: TextStyle(
-                  color: Colors.white,
-                ),
+              child: Linkify(
+                text: 'Link: ' + article.url,
               ),
             ),
             SizedBox(
