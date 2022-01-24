@@ -36,7 +36,7 @@ class ArticlePage extends StatelessWidget {
               padding: EdgeInsets.all(6.0),
               decoration: BoxDecoration(
                 color: Colors.orange,
-                borderRadius: BorderRadius.circular(30.0),
+                borderRadius: BorderRadius.circular(15.0),
               ),
               child: Linkify(
                 text: 'Link: ' + article.url,
@@ -51,7 +51,7 @@ class ArticlePage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontSize: 16.0,
               ),
-            )
+            ),
           ],
         ),
       ),
